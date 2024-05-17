@@ -1,0 +1,10 @@
+---
+- name: Intentionally failing Ansible playbook
+  hosts: localhost
+  tasks:
+    - name: This task will always fail
+      command: /bin/false
+    
+    - name: Display message
+      debug:
+        msg: "Hello"
