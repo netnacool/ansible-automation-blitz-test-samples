@@ -1,0 +1,15 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+
+# Comment out the above part & uncomment the down part as part of testing!
+
+# - name: Example playbook with additional fields
+#   hosts: all
+#   tasks:
+#     - name: Display message
+#       debug:
+#         msg: "Hello, {{ user_name }}! Welcome to Ansible"
