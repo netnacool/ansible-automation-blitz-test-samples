@@ -1,0 +1,7 @@
+---
+- name: Example playbook with additional fields
+  hosts: all
+  tasks:
+    - name: Display message
+      debug:
+        msg: "Hello, {{ user_name }}! Welcome to Ansible"
