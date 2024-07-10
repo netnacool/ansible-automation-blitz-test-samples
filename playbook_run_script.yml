@@ -1,0 +1,9 @@
+- name: Ansible playbook with 20 minutes sleep
+  hosts: localhost
+  tasks:
+    - name: Wait for 20 minutes
+      pause:
+        seconds: 20
+    - name: Display message
+      debug:
+        msg: "Script was successfull"
